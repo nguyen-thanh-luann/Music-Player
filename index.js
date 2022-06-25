@@ -25,6 +25,7 @@ const app = {
         this.config[key] =value;
         localStorage.setItem(MUSIC_PLAYER_KEY, JSON.stringify(this.config))
     },
+  
     songs: [
         {
             name: 'Better Days',
@@ -152,9 +153,8 @@ const app = {
             path: 'assets/music/Senorita.mp3',
             image: 'assets/image/senorita.png'
         },
-
-    ],
     
+    ],
     render: function(){
 
         const htmls = this.songs.map((song, index) => {
